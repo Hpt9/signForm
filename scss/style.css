@@ -1,0 +1,487 @@
+@import url("../font/stylesheet.css");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "DM Sans";
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container .nav-bar {
+  width: 100%;
+  padding: 32px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container .nav-bar > button {
+  border-radius: 56px;
+  border: 1px solid transparent;
+  background: var(--primary-color-1, #4A3AFF);
+  box-shadow: 0px 3px 12px 0px rgba(74, 58, 255, 0.18);
+  color: var(--neutral-100, #FFF);
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  padding: 20px 40px;
+  transition: background 0.15s ease-in-out;
+}
+.container .nav-bar > button:hover {
+  border: 1px solid #4A3AFF;
+  background-color: #FFF;
+  color: #4A3AFF;
+}
+.container .p1 {
+  color: var(--neutral-800, #170F49);
+  text-align: center;
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 46px;
+  max-width: 566.408px;
+}
+.container .p2 {
+  color: var(--neutral-600, #6F6C90);
+  text-align: center;
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 18px;
+  line-height: 30px;
+  max-width: 566.408px;
+  margin-bottom: 42px;
+}
+.container .form {
+  position: relative;
+  padding: 32px 46px;
+  border-radius: 34px;
+  border: 1px solid var(--neutral-300, #EFF0F6);
+  background: var(--neutral-100, #FFF);
+  transition: all 0.4s ease-in-out;
+  /* Cards/Short Default */
+  box-shadow: 0px 5px 16px 0px rgba(8, 15, 52, 0.06);
+  max-width: 698px;
+  width: 90%;
+  overflow: hidden;
+  height: 606px;
+}
+.container .form .range {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  -moz-column-gap: 18px;
+       column-gap: 18px;
+  border-bottom: 1px solid #D9DBE9;
+  padding: 0 20px 32px 20px;
+}
+.container .form .range .line {
+  position: relative;
+  width: 96px;
+  height: 6px;
+  border-radius: 40px;
+  background: var(--neutral-300, #EFF0F6);
+}
+.container .form .range .line .main-line {
+  transition: all 0.4s ease-in-out;
+  height: 100%;
+  background-color: #4A3AFF;
+  border-radius: 40px;
+  width: 0;
+}
+.container .form .range .line .main-line1 {
+  width: 50%;
+}
+.container .form .range .circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #EFF0F6;
+  transition: all 0.4s ease-in-out;
+  width: 34px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  color: var(--neutral-100, #FFF);
+  font-feature-settings: "clig" off, "liga" off;
+  font-weight: 500;
+  line-height: 18px;
+  color: black;
+}
+.container .form .range .circle1 {
+  background-color: #4A3AFF;
+  color: white;
+}
+.container .form .range .circle-blue {
+  background-color: #4A3AFF;
+  color: white;
+}
+.container .form .range .circle-white {
+  background-color: #EFF0F6;
+  color: black;
+}
+.container .form .form-page-1 {
+  position: absolute;
+  transform: translateX(0);
+  top: 64px;
+  left: 64px;
+  transition: all 0.4s ease;
+  margin-top: 64px;
+  width: 82%;
+}
+.container .form .form-page-1 > p:first-child {
+  color: var(--neutral-800, #170F49);
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 35px; /* 145.833% */
+}
+.container .form .form-page-1 > p:nth-child(2) {
+  color: var(--neutral-600, #6F6C90);
+  font-feature-settings: "clig" off, "liga" off;
+  /* Paragraph/Default */
+  font-family: DM Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 166.667% */
+}
+.container .form .form-page-1 .inputs {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+}
+.container .form .form-page-1 .inputs .row {
+  display: flex;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+.container .form .form-page-1 .inputs .row > div {
+  width: 50%;
+}
+.container .form .form-page-1 .inputs .row > div > label {
+  color: var(--neutral-800, #170F49);
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 20px;
+}
+.container .form .form-page-1 .inputs .row > div > input {
+  width: 100%;
+  border-radius: 46px;
+  border: 1px solid var(--neutral-300, #EFF0F6);
+  background: var(--neutral-100, #FFF);
+  box-shadow: 0px 2px 6px 0px rgba(19, 18, 66, 0.07);
+  padding: 21px;
+  color: var(--neutral-600, #6F6C90);
+  font-size: 18px;
+  line-height: 20px;
+  margin-top: 18px;
+}
+.container .form .form-page-1 .inputs .row > div > input:focus {
+  outline: none;
+  border: 1px solid var(--neutral-300, #dddde3);
+}
+.container .form .form-page-1 .inputs .row2 {
+  margin-top: 40px;
+}
+.container .form .form-page-2 {
+  top: 64px;
+  left: 10000px;
+  width: 82%;
+  position: absolute;
+  margin-top: 64px;
+  transform: translateX(0);
+  transition: all 0.4s ease-in-out;
+}
+.container .form .form-page-2 .chc {
+  display: none;
+}
+.container .form .form-page-2 .chc:checked + label {
+  border-radius: 16px;
+  border: 2px solid var(--primary-color-1, #4A3AFF);
+}
+.container .form .form-page-2 > p:first-child {
+  color: var(--neutral-800, #170F49);
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 35px;
+}
+.container .form .form-page-2 > p:nth-child(2) {
+  color: var(--neutral-600, #6F6C90);
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 18px;
+  line-height: 30px;
+}
+.container .form .form-page-2 .row {
+  display: flex;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+.container .form .form-page-2 .row > div {
+  width: 50%;
+}
+.container .form .form-page-2 .row2 {
+  margin-top: 20px;
+}
+.container .form .form-page-2 .chc-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 66px;
+  height: 66px;
+  background-color: #EFF0F6;
+  border-radius: 50%;
+}
+.container .form .form-page-2 label {
+  display: flex;
+  align-items: center;
+  border: 1px solid transparent;
+  box-shadow: 0px 4px 10px 0px rgba(31, 37, 89, 0.07), 0px 2px 11px 0px rgba(69, 65, 164, 0.06);
+  padding: 23px;
+}
+.container .form .form-page-2 .chc2:checked {
+  border: 1px solid #4A3AFF;
+}
+.container .form .form-page-3 {
+  margin-top: 64px;
+  position: absolute;
+  top: 64px;
+  left: 10000px;
+  transition: all 0.4s ease-in-out;
+  width: 82%;
+}
+.container .form .form-page-3 > p:first-child {
+  color: var(--neutral-800, #170F49);
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 35px;
+}
+.container .form .form-page-3 > p:nth-child(2) {
+  color: var(--neutral-600, #6F6C90);
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 18px;
+  line-height: 30px;
+}
+.container .form .form-page-3 .row {
+  margin-top: 20px;
+  display: flex;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+.container .form .form-page-3 .row > div {
+  width: 50%;
+}
+.container .form .form-page-3 .row2 {
+  margin-top: 20px;
+}
+.container .form .form-page-3 .for-radio {
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 115px;
+}
+.container .form .form-page-3 .for-radio > input {
+  margin-left: 30px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 20px !important;
+  height: 20px !important;
+  background-color: white;
+  border: 1px solid #D9DBE9;
+  border-radius: 50%;
+}
+.container .form .form-page-3 .for-radio > input + span {
+  color: var(--neutral-800, #170F49);
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 20px;
+  margin-left: 10px;
+}
+.container .form .form-page-3 .for-radio > input:checked {
+  border: 8px solid #4A3AFF;
+}
+.container .form .form-page-3 .for-radio > input:checked ~ label {
+  border: 2px solid var(--primary-color-1, #4A3AFF);
+}
+.container .form .form-page-3 .for-radio label {
+  position: absolute;
+  width: 100%;
+  border: 1px solid red;
+  height: 100%;
+  border-radius: 16px;
+  border: 2px solid var(--primary-color-1, #FFF);
+  /* Input/Focus */
+  box-shadow: 0px 4px 10px 0px rgba(31, 37, 89, 0.07), 0px 2px 11px 0px rgba(69, 65, 164, 0.06);
+}
+.container .form .form-page-4 {
+  position: relative;
+  top: 64px;
+  left: 10000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  transition: all 0.4s ease-in-out;
+  width: 80%;
+  row-gap: 10px;
+}
+.container .form .form-page-4 > p:first-of-type {
+  color: var(--neutral-800, #170F49);
+  text-align: center;
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 35px; /* 145.833% */
+}
+.container .form .form-page-4 > p:last-of-type {
+  color: var(--neutral-600, #6F6C90);
+  text-align: center;
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+}
+.container .form .form-page-4 > button {
+  padding: 20px 40px;
+  border-radius: 56px;
+  background: var(--primary-color-1, #4A3AFF);
+  box-shadow: 0px 3px 12px 0px rgba(74, 58, 255, 0.18);
+  color: var(--neutral-100, #FFF);
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  border: 1px solid transparent;
+}
+.container .form .form-page-4 > button:hover {
+  background: var(--primary-color-1, #FFF);
+  color: var(--neutral-100, #4A3AFF);
+  border: 1px solid #4A3AFF;
+}
+.container .btn-grp {
+  max-width: 698px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+.container .btn-grp > button {
+  border: none;
+  transition: all 0.15s ease-in-out;
+}
+.container .btn-grp .next {
+  border-radius: 56px;
+  background: var(--primary-color-1, #4A3AFF);
+  box-shadow: 0px 3px 12px 0px rgba(74, 58, 255, 0.18);
+  padding: 20px 40px 21px 40px;
+  color: var(--neutral-100, #FFF);
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  border: 1px solid transparent;
+}
+.container .btn-grp .next:hover {
+  border: 1px solid #4A3AFF;
+  color: #4A3AFF;
+  background-color: white;
+}
+.container .btn-grp .previous {
+  border-radius: 66px;
+  border: 1px solid var(--primary-color-1, #4A3AFF);
+  padding: 20px 40px;
+  font-size: 18px;
+  line-height: 20px;
+  background-color: #4A3AFF;
+  color: white;
+  opacity: 0;
+}
+.container .btn-grp .previous:hover {
+  background-color: white;
+  color: var(--primary-color-1, #4A3AFF);
+}
+.container .footer {
+  width: 100%;
+  padding: 56px 99px;
+  border-top: 1px solid #D9DBE9;
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container .footer .copy {
+  color: var(--neutral-600, #6F6C90);
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 18px;
+  line-height: 30px; /* 166.667% */
+}
+.container .footer .sub {
+  width: 507.488px;
+  height: 73.51px;
+  position: relative;
+  border-radius: 60px;
+}
+.container .footer .sub > input {
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--neutral-300, #EFF0F6);
+  background: var(--neutral-100, #FFF);
+  box-shadow: 0px 8px 25px 0px rgba(13, 10, 44, 0.06);
+  border-radius: 60px;
+  padding-left: 30px;
+}
+.container .footer .sub > input:focus {
+  outline: none;
+  border: 1px solid #d4d5dc;
+}
+.container .footer .sub > button {
+  position: absolute;
+  right: 17.8px;
+  top: 50%;
+  transform: translate(0, -50%);
+  display: inline-flex;
+  padding: 14px 26px 17px 26px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 56px;
+  background: var(--primary-color-1, #4A3AFF);
+  box-shadow: 0px 3px 12px 0px rgba(74, 58, 255, 0.18);
+  color: var(--neutral-100, #FFF);
+  font-feature-settings: "clig" off, "liga" off;
+  font-weight: 500;
+  line-height: 18px;
+  transition: all 0.15s ease-in-out;
+  border: 1px solid transparent;
+}
+
+.chc-img + span {
+  color: var(--neutral-800, #170F49);
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 20px; /* 111.111% */
+  margin-left: 9px;
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    padding: 0;
+  }
+  .container .nav-bar {
+    padding: 32px 40px;
+  }
+}/*# sourceMappingURL=style.css.map */
